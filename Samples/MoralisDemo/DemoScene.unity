@@ -5231,7 +5231,7 @@ PrefabInstance:
     - target: {fileID: 5175095894888145821, guid: ce99fd52594d5e54f972689a083ac409, type: 3}
       propertyPath: ConnectedEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 302390320}
+      objectReference: {fileID: 0}
     - target: {fileID: 5175095894888145821, guid: ce99fd52594d5e54f972689a083ac409, type: 3}
       propertyPath: DisconnectedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
@@ -11123,17 +11123,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 820333861976769226, guid: 92a55869e7472454dadee29ba39473e7, type: 3}
   m_PrefabInstance: {fileID: 1523307274}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &302390320 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6266890725912523073, guid: 116667ed98661304da1568439e2a3426, type: 3}
-  m_PrefabInstance: {fileID: 6266890726214380913}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 411f905c051c23f4fb5890879a506219, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &321412930 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6202656974232880632, guid: 1081ce75d8db06545874fa163880f38d, type: 3}
@@ -31456,7 +31445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 669b4c0065732ac4ba25705a404a25b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moralisController: {fileID: 302390320}
+  moralisController: {fileID: 6266890726214380915}
   AuthenticationButton: {fileID: 990276067045873226}
   walletConnect: {fileID: 71058177}
   qrMenu: {fileID: 4278207833480748682}
@@ -47754,8 +47743,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoralisSetup
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6266890725912523073, guid: 116667ed98661304da1568439e2a3426, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 116667ed98661304da1568439e2a3426, type: 3}
+--- !u!1 &6266890726214380914 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6266890725912523103, guid: 116667ed98661304da1568439e2a3426, type: 3}
+  m_PrefabInstance: {fileID: 6266890726214380913}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6266890726214380915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6266890726214380914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 327d4fc630ad3714c96d7fb1d8b9d9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoralisServerURI: SERVER URI
+  MoralisApplicationId: APPLICATION ID
+  ApplicationName: Moralis Metaverse SDK Example
+  Version: 1.0.9
+  ApplicationDescription: lis in a Unity 3D Gameies an example of how to you Moralis
+    in a Unity 3D Game
+  ApplicationIcons:
+  - https://moralis.io/wp-content/uploads/2021/06/Powered-by-Moralis-Badge-Black.svg
+  ApplicationUrl: https://www.moralis.io
+  walletConnect: {fileID: 71058177}
 --- !u!4 &7044637422979707830
 Transform:
   m_ObjectHideFlags: 0
